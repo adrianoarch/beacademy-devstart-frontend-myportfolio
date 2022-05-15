@@ -20,7 +20,7 @@
   body {
     background-color: var(--body-color);
     color: var(--text-color);
-    transition: .4s; /* for light mode animation */
+    transition: .4s; /*  Para a animação de modo escuro/claro */
   }
   
   h1, h2, h3 {
