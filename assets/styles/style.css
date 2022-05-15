@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.nav_link{
+.nav__link{
   display: flex;
   color: var(--text-color);
   font-size: 1.25rem;
@@ -51,9 +51,16 @@
 }
 
 /* Active link */
+.active-link{
+  background: linear-gradient(180deg, 
+  hsla(var(--first-hue), var(--sat), var(--lig), 1), 
+  hsla(var(--first-hue), var(--sat), var(--lig), .2)
+  );
+box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+}
 
 
-/* Change background header */
+/* ALterar Tema do header */
 
 
 /*=============== HOME ===============*/
