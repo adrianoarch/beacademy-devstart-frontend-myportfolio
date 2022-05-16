@@ -478,14 +478,14 @@
         <h2 class="section__title">Trabalhos recentes</h2>
 
         <div class="work__filters">
-          <span class="work__item active-work">Todos</span>
-          <span class="work__item">Intranet</span>
-          <span class="work__item">Web Sites</span>
-          <span class="work__item">Aplicações</span>
+          <span class="work__item active-work" data-filter="all">Todos</span>
+          <span class="work__item" data-filter=".landing">Landing Pages</span>
+          <span class="work__item" data-filter=".web-sites">Web Sites</span>
+          <span class="work__item" data-filter=".aplicacoes">Aplicações</span>
         </div>
 
         <div class="work__container container grid">
-          <div class="work__card">
+          <div class="work__card mix landing">
             <img src="./assets/img/work1.jpg" alt="Imagem de um notebook, canetas, papel e um celular" class="work__img">
 
             <h3 class="work__title">Landing Pages</h3>
@@ -495,7 +495,7 @@
             </a>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix web-sites">
             <img src="./assets/img/work2.jpg" alt="Imagem de um notebook, canetas, papel e um celular" class="work__img">
 
             <h3 class="work__title">Sites Profissionais</h3>
@@ -505,7 +505,7 @@
             </a>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix web-sites">
             <img src="./assets/img/work3.jpg" alt="Imagem de um notebook, canetas, papel e um celular" class="work__img">
 
             <h3 class="work__title">Sites de Eventos</h3>
@@ -515,7 +515,7 @@
             </a>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix aplicacoes">
             <img src="./assets/img/work4.jpg" alt="Imagem de um notebook, canetas, papel e um celular" class="work__img">
 
             <h3 class="work__title">Aplicações Web</h3>
@@ -525,7 +525,7 @@
             </a>
           </div>
 
-          <div class="work__card">
+          <div class="work__card mix landing">
             <img src="./assets/img/work5.jpg" alt="Imagem de um notebook, canetas, papel e um celular" class="work__img">
 
             <h3 class="work__title">Portfólios</h3>
@@ -554,7 +554,7 @@
     <script src=""></script>
 
     <!--=============== MIXITUP FILTER ===============-->
-    <script src=""></script>
+    <script src="./assets/js/mixitup.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>

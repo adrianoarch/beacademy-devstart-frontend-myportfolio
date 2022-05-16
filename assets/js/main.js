@@ -28,9 +28,28 @@ modalClose.forEach((mc, index) => {
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
+let mixerPortfolio = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
+/* Função para adicionar e remover class active-work */ 
+const linkWork = document.querySelectorAll('.work__item')
 
-/* Link active work */ 
+function activeWork(link){
+    linkWork.forEach(l => {
+        l.classList.remove('active-work')
+    })
+    link.classList.add('active-work')
+}
+
+linkWork.forEach(l => l.addEventListener('click', () => {
+    activeWork(l)
+}))
 
 
 /*=============== SWIPER TESTIMONIAL ===============*/
