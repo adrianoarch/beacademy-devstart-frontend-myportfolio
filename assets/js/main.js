@@ -7,7 +7,25 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SERVICES MODAL ===============*/
+const modalViews = document.querySelectorAll('.services__modal')
+const modalBtns = document.querySelectorAll('.services__button')
+const modalClose = document.querySelectorAll('.services__modal-close')
 
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((mb, index) => {
+    mb.addEventListener('click', () => {
+        modal(index)
+    })
+})
+
+modalClose.forEach((mc, index) => {
+    mc.addEventListener('click', () => {
+        modalViews[index].classList.remove('active-modal')
+    })
+})
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
