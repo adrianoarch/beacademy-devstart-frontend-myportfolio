@@ -13,12 +13,12 @@
           Mostarda: hsl(36, 72%, 48%)
           cORAL: hsl(25, 96%, 51%)
     */
-    --first-hue: 25;
-    --sat: 96%;
-    --lig: 51%;
+    --first-hue: 36;
+    --sat: 72%;
+    --lig: 48%;
     --second-hue: 219;
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 67%); /* -4% */
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 44%); /* -4% */
     --title-color: hsl(var(--second-hue), 15%, 95%);
     --text-color: hsl(var(--second-hue), 8%, 75%);
     --text-color-light: hsl(var(--second-hue), 4%, 55%);
