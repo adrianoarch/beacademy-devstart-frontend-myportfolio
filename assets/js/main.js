@@ -1,3 +1,12 @@
+/*=============== LOADER ===============*/
+onload = () => {
+    const load = document.querySelector('#load');
+
+    setTimeout(() => {
+        load.style.display = 'none';
+    }, 4500);
+  }
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
     const header = document.getElementById('header')
