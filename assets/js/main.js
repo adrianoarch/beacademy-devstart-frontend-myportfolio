@@ -4,7 +4,7 @@ onload = () => {
 
     setTimeout(() => {
         load.style.display = 'none';
-    }, 4500);
+    }, 3000);
   }
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
@@ -132,5 +132,16 @@ themeButton.addEventListener('click', () => {
 })
 
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*=============== ANIMAÇÃO SCROLL REVEAL ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    // reset: true,
+    delay: 3000
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__handle`, {delay: 3200})
+sr.reveal(`.home__social, .home__scroll`, {delay: 3300, origin: 'bottom'})
 
