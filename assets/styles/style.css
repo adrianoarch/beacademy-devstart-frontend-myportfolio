@@ -63,7 +63,7 @@
 }
 
 
-/* Alterar tema do header */
+/* Alterar tema do header quando tela desce*/
 .scroll-header{
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
@@ -165,7 +165,7 @@
 .home__scroll{
   color: var(--first-color);
   right: -1.5rem;
-  bottom: 4rem;
+  bottom: 5rem;
   display: grid;
   row-gap: 3rem;
   justify-items: center;
