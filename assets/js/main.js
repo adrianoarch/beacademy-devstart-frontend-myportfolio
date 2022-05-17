@@ -93,6 +93,34 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== LIGHT DARK THEME ===============*/ 
+const themeButton = document.getElementById('theme-button')
+const lightTheme = 'light-theme'
+const iconTheme = 'bx-sun'
+
+// Tema previamente selecionado (se o usuário for selecionado)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// Obtemos o tema atual da interface validando a classe light-theme
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+
+// Validamos se o usuário já escolheu um tópico
+if (selectedTheme) {
+  // Se a validação for atendida, perguntamos qual foi a escolha para saber se ativamos ou desativamos o tena
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Ative/desative o tema manualmente com o botão
+themeButton.addEventListener('click', () => {
+    // Adicione ou remova o tema / tema do ícone
+    document.body.classList.toggle(lightTheme)
+    themeButton.classList.toggle(iconTheme)
+    // Salvamos o tema e o ícone atual que o usuário escolheu usando o localStorage
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
