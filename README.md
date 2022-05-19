@@ -11,7 +11,7 @@ https://adrianoarch.github.io/beacademy-devstart-frontend-myportfolio/
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/11Ocu_MBAvjP3D27X9bn84Gc2khGBD5_K/view?usp=sharing)
+https://drive.google.com/file/d/11Ocu_MBAvjP3D27X9bn84Gc2khGBD5_K/view?usp=sharing
 
 
 ## Stack utilizada
