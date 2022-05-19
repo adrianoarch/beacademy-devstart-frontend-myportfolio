@@ -107,11 +107,11 @@
             height: calc(var(--header-height) + 1rem);
         }
         .home__handle{
-            width: 290px;
-            height: 350px;
+            width: 320px;
+            height: 320px;
         }
         .home__img{
-            width: 320px;
+            width: 300px;
         }
         .home__social-link{
             padding: .4rem;

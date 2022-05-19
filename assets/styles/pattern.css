@@ -13,18 +13,23 @@
           Mostarda: hsl(36, 72%, 48%)
           cORAL: hsl(25, 96%, 51%)
           Coral2: hsl(10, 100%, 64%)
+          Azul Escuro alt: hsl(234, 38%, 23%)
+          Azul Escuro: hsl(231, 41%, 20%)
+          Vermelho: hsl(355, 91%, 63%)
+
+          
     */
-    --first-hue: 10;
-    --sat: 100%;
-    --lig: 64%;
+    --first-hue: 355;
+    --sat: 91%;
+    --lig: 63%;
     --second-hue: 219;
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 60%); /* -4% */
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 59%); /* -4% */
     --title-color: hsl(var(--second-hue), 15%, 95%);
     --text-color: hsl(var(--second-hue), 8%, 75%);
     --text-color-light: hsl(var(--second-hue), 4%, 55%);
     /* --body-color: hsl(var(--second-hue), 48%, 8%); */
-    --body-color: hsl(206, 12%, 12%);
+    --body-color: hsl(232, 26%, 16%);
     --container-color: hsl(var(--second-hue), 32%, 12%);
   
     /*========== Fonte e tipografia ==========*/
