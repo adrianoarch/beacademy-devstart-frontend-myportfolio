@@ -4,7 +4,7 @@ onload = () => {
 
     setTimeout(() => {
         load.style.display = 'none';
-    }, 3000);
+    }, 2500);
   }
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
